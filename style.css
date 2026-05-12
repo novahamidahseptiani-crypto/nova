@@ -416,8 +416,8 @@ nav {
         max-width: 100%;  /* Full width on mobile */
     }
 }
- /* Skills Section */
-.skills-grid {
+ /* Jasa Section */
+.jasa-grid {
     display: flex;  /* Ubah dari grid ke flex */
     justify-content: space-between;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
