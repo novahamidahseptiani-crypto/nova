@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Winaningsih</title>
-    <!-- Font Awesome & Google Fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="style css.css">
+ </head>
+    <style>
+        
+    </style>
+</head>
 
+<body>
+    <!-- Partikel latar belakang -->
+    </style>
 </head>
 
 <body>
     <!-- Partikel latar belakang -->
     <div class="particles" id="particles"></div>
 
+    <!-- Overlay untuk mobile menu -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
     <div class="container">
         <nav>
-            <div class="logo">WINANINGSIH</div>
+            <div class="logo">Winaningsih</div>
             <div class="nav-links" id="navLinks">
                 <a data-section="home" class="active">Home</a>
                 <a data-section="about">About</a>
                 <a data-section="skills">Skills</a>
                 <a data-section="content">Contact</a>
-                <a data-section="jasa">Jasa</a>
+                <a data-section="jasa">jasa</a>
             </div>
             
             <div class="menu-btn" id="menuBtn">
@@ -40,7 +51,7 @@
                         <p>Perkenalkan saya Winaningsih, siswi SMK YAPPRI SUMEDANG. Saya pribadi yang ramah. Di waktu luang saya senang bermain game, olahraga, dan mendengarkan musik.</p>
                         <a href="#" class="btn" onclick="navigateTo('content'); return false;"><span>Hire Me</span></a>
                         <div class="social-links">
-                            <a href="https://www.instagram.com/@winnn_aa_" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/@winnn_aa_" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                             <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
                             <a href="https://www.tiktok.com/@ining788" aria-label="TikTok" target="_blank"><i class="fab fa-tiktok"></i></a>
                             <a href="#" aria-label="Email"><i class="far fa-envelope"></i></a>
@@ -49,7 +60,6 @@
 
                     <div class="profile-image">
                         <div class="profile-circle">
-                            <!-- Fallback jika gambar gagal dimuat -->
                             <img src="ining.jpeg" alt="Profile Winaningsih"
                                  onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:100%;height:100%;border-radius:50%;background:linear-gradient(135deg,rgba(0,240,255,0.2),rgba(168,85,247,0.2));display:flex;align-items:center;justify-content:center;font-size:4rem;color:var(--accent);\'><i class=\'fas fa-user\'></i></div>';">
                         </div>
@@ -63,9 +73,7 @@
                     <div class="timeline">
                         <div class="timeline-item">
                             <h3>About Me</h3>
-                            <p>Hallo perkenalkan saya Winaningsih, saya lahir tanggal 18 Oktober 2008 di Sumedang. Saya tinggal di Karanganyar, Desa Cipeundeuy, Kecamatan Jatinunggal, Kabupaten Sumedang. Saya seorang pelajar SMK YAPPRI SUMEDANG, duduk di bangku kelas 11 jurusan Teknik Informatika.</p>
-                            <br>
-                            <p>Saya mengikuti ekstrakurikuler pencak silat dan bola volly. Sebelumnya saya pernah duduk di bangku SMPN 1 Jatinunggal selama 3 tahun, dan mengikuti ekstrakurikuler drumband serta bola volly.</p>
+                            <p>Hallo perkenalkan saya Winaningsih, saya lahir tanggal 18 Oktober 2008 Sumedang. Saya tinggal di Karanganyar, Desa Cipeundeuy, Kecamatan Jatinunggal, Kabupaten Sumedang. Saya seorang pelajar SMK YAPPRI SUMEDANG, duduk di bangku kelas 11 jurusan Teknik Informatika. Saya mengikuti ekstrakurikuler pencak silat dan bola volly. Sebelumnya saya pernah duduk di bangku SMPN 1 Jatinunggal selama 3 tahun, dan mengikuti ekstrakurikuler drumband serta bola volly.</p>
                         </div>
                     </div>
                 </div>
@@ -79,16 +87,22 @@
                             <h3>Microsoft Office</h3>
                             <ul class="skill-list">
                                 <li>
-                                    <div class="skill-name"><span>Word</span><span>95%</span></div>
-                                    <div class="skill-bar"><div class="skill-progress" data-width="95%"></div></div>
+                                    Word
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="95"></div>
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="skill-name"><span>Excel</span><span>90%</span></div>
-                                    <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                                    Excel
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="90"></div>
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="skill-name"><span>Power Point</span><span>85%</span></div>
-                                    <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                                    Power Point
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="85"></div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -96,55 +110,35 @@
                             <h3>Web Development</h3>
                             <ul class="skill-list">
                                 <li>
-                                    <div class="skill-name"><span>HTML</span><span>90%</span></div>
-                                    <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                                    HTML
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="90"></div>
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="skill-name"><span>CSS</span><span>85%</span></div>
-                                    <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                                    CSS
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="85"></div>
+                                    </div>
                                 </li>
                                 <li>
-                                    <div class="skill-name"><span>JavaScript</span><span>75%</span></div>
-                                    <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+                                    JavaScript
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="75"></div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <!-- Jasa Section (DIPERBAIKI & DIPINDAHKAN KE DALAM MAIN) -->
-            <section id="jasa" class="content-section">
-                <div class="hologram-container">
-                    <h2 style="font-family: var(--font-tech); text-align: center; color: var(--primary-cyan); margin-bottom: 30px;">My Services</h2>
-                    <div class="jasa-grid">
-                        <div class="jasa-card">
-                            <h3><i class="fas fa-keyboard"></i> Jasa Ketik</h3>
-                            <p>Mengetik dokumen, makalah, atau tugas dengan cepat dan rapi.</p>
-                            <span class="jasa-price">Rp 5.000 / Halaman</span>
-                            <a href="#content" class="btn" onclick="navigateTo('content')" style="font-size: 0.8rem; padding: 8px 20px;">Order</a>
-                        </div>
-                        <div class="jasa-card">
-                            <h3><i class="fas fa-file-powerpoint"></i> Desain PPT</h3>
-                            <p>Membuat slide presentasi yang menarik untuk tugas sekolah.</p>
-                            <span class="jasa-price">Mulai Rp 25.000</span>
-                            <a href="#content" class="btn" onclick="navigateTo('content')" style="font-size: 0.8rem; padding: 8px 20px;">Order</a>
-                        </div>
-                        <div class="jasa-card">
-                            <h3><i class="fas fa-laptop-code"></i> Web Sederhana</h3>
-                            <p>Membuat website statis dasar menggunakan HTML dan CSS.</p>
-                            <span class="jasa-price">Hubungi Saya</span>
-                            <a href="#content" class="btn" onclick="navigateTo('content')" style="font-size: 0.8rem; padding: 8px 20px;">Chat</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
 
             <!-- Contact Section -->
             <section id="content" class="content-section">
                 <div class="hologram-container">
                     <div class="content-grid">
-                        <h2 style="font-family: var(--font-tech); text-align: center; color: var(--secondary-pink); margin-bottom: 20px;">CONTACT ME</h2>
+                        <h2>CONTACT ME</h2>
                     </div>
                     <form class="contact-form" id="contactForm">
                         <div class="input-field">
@@ -162,11 +156,67 @@
             </section>
         </main>
     </div>
+ <!-- jasa Section -->
+            <section id="jasa" class="content-section">
+                <div class="hologram-container">
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Microsoft Office</h3>
+                            <ul class="skill-list">
+                                <li>
+                                    Word
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="95"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    Excel
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="90"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    Power Point
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="85"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Web Development</h3>
+                            <ul class="skill-list">
+                                <li>
+                                    HTML
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="90"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    CSS
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="85"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    JavaScript
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="75"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
     
     <!-- Toast notification -->
     <div class="toast" id="toast">
         <i class="fas fa-check-circle"></i>
         <span id="toastMessage">Pesan berhasil dikirim!</span>
     </div>
+
+   <script src="script js.js"></script>
+    
 </body>
 </html>
