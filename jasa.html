@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Jasa - NOVA</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">NOVA</a>
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fa fa-bars"></i>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <!-- Active class pindah ke Jasa -->
+        <a href="jasa.html" class="active">Jasa</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="services">
+      <h1>Layanan Saya</h1>
+      <p class="subtitle">Solusi kreatif dan profesional untuk kebutuhan Anda</p>
+      
+      <div class="services-container">
+        <!-- Kartu Jasa 1 -->
+        <div class="service-card">
+          <div class="icon">
+            <i class="fa-solid fa-image"></i>
+          </div>
+          <h2>Edit Foto</h2>
+          <p>
+            Layanan editing foto profesional mulai dari retouch wajah, color grading, hingga manipulasi latar belakang.
+          </p>
+          <!-- Harga -->
+          <div class="price">
+            <small>Mulai dari</small> Rp 50.000 <span>/foto</span>
+          </div>
+          <a href="https://wa.me/62083107778333" class="btn">Pesan Sekarang</a>
+        </div>
+
+        <!-- Kartu Jasa 2 -->
+        <div class="service-card">
+          <div class="icon">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+          <h2>Desain Poster</h2>
+          <p>
+            Pembuatan desain poster, banner, dan brokir yang menarik perhatian audiens Anda untuk promosi maksimal.
+          </p>
+          <!-- Harga -->
+          <div class="price">
+            <small>Mulai dari</small> Rp 100.000 <span>/desain</span>
+          </div>
+          <a href="https://wa.me/62083107778333" class="btn">Pesan Sekarang</a>
+        </div>
+
+        <!-- Kartu Jasa 3 -->
+        <div class="service-card">
+          <div class="icon">
+            <i class="fa-solid fa-file-pen"></i>
+          </div>
+          <h2>Membuat Makalah</h2>
+          <p>
+            Bantuan penulisan makalah, artikel ilmiah, atau dokumen laporan dengan struktur rapi dan bahasa formal.
+          </p>
+          <!-- Harga -->
+          <div class="price">
+            <small>Mulai dari</small> Rp 15.000 <span>/lembar</span>
+          </div>
+          <a href="https://wa.me/62083107778333" class="btn">Pesan Sekarang</a>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      /* Reset & Base Styles */
+      body {
+        background-color: #191919;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+
+      /* Header & Navigation */
+      header {
+        padding: 1rem 9%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        background-color: #191919;
+        z-index: 1000;
+      }
+
+      .logo {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: white;
+        text-decoration: none;
+        letter-spacing: 2px;
+      }
+
+      .menu-toggle {
+        display: none;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+      }
+
+      nav {
+        display: flex;
+        gap: 2rem;
+      }
+
+      nav a {
+        color: white;
+        margin-left: 4rem;
+        font-size: 1.8rem;
+        text-decoration: none;
+        border-bottom: 3px solid transparent;
+        transition: 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #e3651d;
+      }
+
+      nav a.active {
+        color: #e3651d;
+        border-bottom: 3px solid #e3651d;
+      }
+
+      /* Services Section */
+      .services {
+        padding: 6rem 9% 5rem;
+        text-align: center;
+        min-height: 80vh;
+      }
+
+      .services h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        color: white;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+        color: #ccc;
+        margin-bottom: 4rem;
+      }
+
+      /* Grid Layout */
+      .services-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        justify-items: center;
+      }
+
+      /* Service Card Styling */
+      .service-card {
+        background-color: #262626;
+        padding: 3rem 2rem;
+        border-radius: 15px;
+        width: 100%;
+        max-width: 350px;
+        text-align: center;
+        transition: 0.3s ease;
+        border: 1px solid #333;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .service-card:hover {
+        transform: translateY(-10px);
+        border-color: #e3651d;
+        box-shadow: 0 10px 25px rgba(227, 101, 29, 0.2);
+      }
+
+      .service-card .icon {
+        font-size: 4rem;
+        color: #e3651d;
+        margin-bottom: 1.5rem;
+      }
+
+      .service-card h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: white;
+      }
+
+      .service-card p {
+        color: #aaa;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        flex-grow: 1; /* Pushes price and button to the bottom */
+      }
+
+      /* --- STYLE BARU UNTUK HARGA --- */
+      .price {
+        margin: 1.5rem 0;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #fff;
+      }
+
+      .price small {
+        display: block;
+        font-size: 0.9rem;
+        color: #999;
+        font-weight: 400;
+        margin-bottom: 0.3rem;
+      }
+
+      .price span {
+        font-size: 1rem;
+        color: #e3651d;
+        font-weight: 400;
+      }
+      /* ------------------------------- */
+
+      /* Button Styling */
+      .btn {
+        display: inline-block;
+        padding: 0.8rem 2rem;
+        background-color: #e3651d;
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: 600;
+        transition: 0.3s ease;
+        width: 100%; /* Tombol full width di dalam kartu */
+      }
+
+      .btn:hover {
+        background-color: #c25312;
+        transform: scale(1.02);
+      }
+
+      /* Mobile Responsive */
+      @media (max-width: 768px) {
+        .menu-toggle {
+          display: block;
+        }
+
+        nav {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background-color: #262626;
+          padding: 1rem 0;
+          z-index: 999;
+          box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+        }
+
+        nav.active {
+          display: flex;
+        }
+
+        nav a {
+          margin: 1rem 0;
+          font-size: 1.6rem;
+          text-align: center;
+          margin-left: 0;
+        }
+
+        .services {
+          padding: 5rem 5% 3rem;
+        }
+
+        .services h1 {
+          font-size: 3rem;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .logo {
+          font-size: 2rem;
+        }
+        
+        .services-container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+
+    <script>
+      const mobileMenu = document.getElementById("mobile-menu");
+      const nav = document.querySelector("nav");
+
+      mobileMenu.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Nova</a>
+      <nav>
+        <a href="index.html">Home</a>
+         <a href="skills.html">Skills</a>
+           <a href="jasa.html">Jasa</a>
+        <a href="#contact" class="active">Contact</a>
+      </nav>
+    </header>
+
+    <section id="contact" class="contact">
+      <h2
+        style="
+          text-align: center;
+          font-size: 4rem;
+          margin-bottom: 2rem;
+          margin-top: 10rem;
+        "
+      >
+        Contact <span>Us</span>
+      </h2>
+      <div class="contact-container">
+        <form action="#" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p>
+            Email:
+            <a href="mailto:example@example.com" class="highlight-email"
+              >novahamidahseptiani@gmail.com</a
+            >
+          </p>
+          <p>Phone: +62 831 0777 8333</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .contact {
+        background-color: #161616;
+        color: white;
+        padding: 5rem 9%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact-container {
+        display: flex;
+        gap: 4rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+      }
+
+      .contact-form {
+        flex: 1;
+        max-width: 500px;
+      }
+
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+
+      .form-group label {
+        display: block;
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.6rem;
+        color: white;
+        background-color: #191919;
+        border: 1px solid #e3651d;
+        border-radius: 0.5rem;
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        border-color: #e3651d;
+        box-shadow: 0 0 10px #e3651d;
+      }
+
+      .contact-info {
+        flex: 1;
+        max-width: 400px;
+        text-align: center;
+      }
+
+      .contact-info h3 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .contact-info p {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+      }
+
+      .contact-info a.highlight-email {
+        color: white;
+        transition: color 0.3s ease;
+      }
+
+      .contact-info a.highlight-email:hover {
+        color: #ff7700;
+      }
+
+      .social-icons a {
+        display: inline-block;
+        margin: 0 1rem;
+      }
+
+      header {
+        margin-bottom: 5rem;
+      }
+    </style>
+  </body>
+</html>

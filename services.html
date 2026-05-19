@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Services - Tamzidan</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">NOVA</a>
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fa fa-bars"></i>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="services.html" class="active">Services</a
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="services">
+      <h1>My Services</h1>
+      <div class="service-item">
+        <i class="fa-solid fa-code service-icon"></i>
+        <h2>Web Development</h2>
+        <p>
+          Creating responsive and dynamic websites with modern technologies like
+          HTML, CSS, and JavaScript.
+        </p>
+      </div>
+      <div class="service-item">
+        <i class="fa-solid fa-paint-brush service-icon"></i>
+        <h2>Web Design</h2>
+        <p>
+          Crafting visually appealing designs and user-friendly interfaces for a
+          seamless user experience.
+        </p>
+      </div>
+      <div class="service-item">
+        <i class="fa-solid fa-edit service-icon"></i>
+        <h2>Content Creation</h2>
+        <p>
+          Providing high-quality scripts, blogs, and video content tailored to
+          your needs.
+        </p>
+      </div>
+    </section>
+
+    <style>
+      body {
+        background-color: #191919;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        padding: 1rem 9%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+      }
+
+      .menu-toggle {
+        display: none;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+      }
+
+      nav {
+        display: flex;
+        gap: 2rem;
+      }
+
+      nav a {
+        color: white;
+        margin-left: 4rem;
+        font-size: 1.8rem;
+        text-decoration: none;
+        border-bottom: 3px solid transparent;
+        transition: 0.3s ease;
+      }
+
+      nav a.active {
+        color: #e3651d;
+        border-bottom: 3px solid #e3651d;
+      }
+
+      @media (max-width: 768px) {
+        .menu-toggle {
+          display: block;
+        }
+
+        nav {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background-color: #333;
+          padding: 1rem 0;
+          z-index: 1000;
+        }
+
+        nav.active {
+          display: flex;
+        }
+
+        nav a {
+          margin: 1rem 0;
+          font-size: 1.6rem;
+          text-align: center;
+        }
+      }
+
+      .services {
+        padding: 10rem 9% 5rem;
+        text-align: center;
+      }
+
+      .services h1 {
+        font-size: 4rem;
+        margin-bottom: 4rem;
+      }
+
+      .service-item {
+        margin-bottom: 3rem;
+      }
+
+      .service-icon {
+        font-size: 4rem;
+        color: #e3651d;
+        margin-bottom: 1.5rem;
+      }
+
+      .service-item h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .service-item p {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: #bbb;
+      }
+
+      @media (max-width: 600px) {
+        nav a {
+          margin-left: 2rem;
+          font-size: 1.5rem;
+        }
+
+        .services h1 {
+          font-size: 3rem;
+        }
+
+        .service-icon {
+          font-size: 3rem;
+        }
+
+        .service-item h2 {
+          font-size: 2rem;
+        }
+
+        .service-item p {
+          font-size: 1.4rem;
+        }
+      }
+    </style>
+
+    <script>
+      const mobileMenu = document.getElementById("mobile-menu");
+      const nav = document.querySelector("nav");
+
+      mobileMenu.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
